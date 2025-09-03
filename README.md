@@ -22,23 +22,40 @@ If you don’t know how to clone a repo yet, here’s the step:
 2. Open your terminal and run:  
    ```bash
    git clone <repo-url>
-   (you have to have git installed before you this this install git and then open your bash terminal)
-Move into the project folder:
-cd project-name
+````
+
+3. Move into the project folder:
+
+   ```bash
+   cd project-name
+   ```
+
 Now you have the project on your local machine. 🎉
 
-2. Workflow
+---
 
-Always pull the latest changes before working:
-git pull origin main
-After making your changes:
-git add .
-git commit -m "your message here"
-git push origin main
-✅ Guidelines
+### 2. Workflow
 
-Stick to the existing folder/file structure.
+* Always **pull the latest changes** before working:
 
-Reuse the fonts and colors already defined.
+  ```bash
+  git pull origin main
+  ```
+* After making your changes:
 
-Communicate if you’re not sure about something.
+  ```bash
+  git add .
+  git commit -m "your message here"
+  git push origin main
+  ```
+
+---
+
+## ✅ Guidelines
+
+* Stick to the existing folder/file structure.
+* Reuse the **fonts and colors** already defined.
+* Communicate if you’re not sure about something.
+
+---
+Keep the positive vibes guys.
