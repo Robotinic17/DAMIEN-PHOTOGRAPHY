@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Main-font: "Manrope", sans-serif;
+    --primary-bg: rgba(7, 7, 8, 1);
+    --secondary-color: rgba(87, 58, 238, 1);
+    --primary-font-color: rgba(196, 196, 196, 1);
+    --secondary-font-color: rgba(255, 255, 255, 1);
+}
+
+body{
+    background: var(--primary-bg);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: block;
+    position: fixed;
+    
+}
