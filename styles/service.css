@@ -2,6 +2,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: white;
+    border: none;
+    outline: none;
 }
 :root{
     --Main-font: "Manrope", sans-serif;
@@ -9,6 +12,8 @@
     --secondary-color: rgba(87, 58, 238, 1);
     --primary-font-color: rgba(196, 196, 196, 1);
     --secondary-font-color: rgba(255, 255, 255, 1);
+    --main-font-color:  rgba(121, 124, 134, 1);
+
 }
 
 body{
@@ -36,6 +41,7 @@ header {
     align-items: center;
     justify-content: center;
     animation: dropIn 1s ease-out  forwards;
+    z-index: 1000;
 }
 
 @keyframes dropIn {
@@ -55,6 +61,7 @@ nav {
     align-items: center;
     width: 100%;
     height: 5rem;
+    z-index: 10000;
 }
 
 nav p{
@@ -144,7 +151,212 @@ nav button:active{
 
 .hero_section {
     width: 80vw;
-    height: 500px;
-    margin-top: 25vh;
+    height: 600px;
+    margin-top: 30vh;
     justify-self: center;
+    background-image: url(../assets/hero.png); 
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    animation: fadeIn 0.5s  1s linear backwards;
+    z-index: 0;
+    border-radius: 50px 0px 0px 0px;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.hero-text {
+    width: 70%;
+    height: 150px;
+    background: var(--primary-bg);
+    border-radius: 0px 0px 0px 45px;
+    position: absolute;
+    right: -1px;
+    padding: 0 1px 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-text h6{
+    color: var(--primary-font-color);
+    font-family: var(--Main-font);
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* align-self: self-start; */
+    text-transform: capitalize;
+}
+
+.hero-text h2{
+    color: var(--secondary-font-color);
+    font-family: var(--Main-font);
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.hero-text p{
+    color: var(--primary-font-color);
+    font-family: var(--Main-font);
+    font-weight: lighter;
+    font-size: .7rem;
+    text-transform: capitalize;
+}
+
+.hero-img {
+    width: 10%;
+    height: 100px;
+    background: var(--primary-bg);
+    border-radius: 0px 40px 0px 0px;
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-command{
+    width: 15%;
+    height: 100px;
+    background: var(--primary-bg);
+    border-radius: 40px 0px 0px 0px;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.hero-command span{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-family: var(--Main-font);
+    color: var(--primary-font-color);
+    font-weight: lighter;
+}
+
+.portrait{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+    margin-top: 9rem;
+    justify-self: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
+}
+
+.portrait-text{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.portrait-text h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: var(--Main-font);
+    color: var(--main-font-color);
+    font-weight: 700;
+}
+
+.portrait-text p{
+    text-transform: capitalize;
+    font-size: .9rem;
+    font-family: var(--Main-font);
+    color:  var(--main-font-color);
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+.portrait-text button{
+    background-color: var(--primary-bg);
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 15px 20px;
+    width: max-content;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    font-size: 15px;
+    color: var(--primary-font-color);
+    text-transform: uppercase;
+}
+
+.portrait-text button:hover{
+    background: #1b1a1a;
+    scale: 1.1;
+}
+
+.portrait-text button:active{
+    background: #404040;
+    scale: 0.95;
+}
+
+.portrait-img {
+    background-image: url(../assets/port-img.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+.port-button-cointainer {
+    width: 150px;
+    height: 75px;
+    background: var(--primary-bg);
+    border-radius: 20px;
+    align-self: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.port-button-cointainer button {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background: inherit;
+    border-radius: 50%;
+    background: #404040;
+}
+
+
+.port-button-cointainer button img{
+    height: 40px;
+    width: 40px;
+}
+
+
+
