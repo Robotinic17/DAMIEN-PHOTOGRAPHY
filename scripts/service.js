@@ -16,32 +16,32 @@ const faqArray = [
     desc: "Yes, I provide professional photo editing to enhance your pictures while keeping them natural.",
   },
   {
-    id: "1",
+    id: "4",
     title: "WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZE IN?",
     desc: "I specialize in Portrait, Landscape, Event, etc. photography, capturing moments that tell unique stories.",
   },
   {
-    id: "2",
+    id: "5",
     title: "HOW DO I BOOK A SESSION?",
     desc: "You can book a session by contacting me directly via email or phone. I’ll guide you through the process.",
   },
   {
-    id: "3",
+    id: "6",
     title: "DO YOU OFFER PHOTO EDITING SERVICES?",
     desc: "Yes, I provide professional photo editing to enhance your pictures while keeping them natural.",
   },
   {
-    id: "1",
+    id: "7",
     title: "WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZE IN?",
     desc: "I specialize in Portrait, Landscape, Event, etc. photography, capturing moments that tell unique stories.",
   },
   {
-    id: "2",
+    id: "8",
     title: "HOW DO I BOOK A SESSION?",
     desc: "You can book a session by contacting me directly via email or phone. I’ll guide you through the process.",
   },
   {
-    id: "3",
+    id: "9",
     title: "DO YOU OFFER PHOTO EDITING SERVICES?",
     desc: "Yes, I provide professional photo editing to enhance your pictures while keeping them natural.",
   },
