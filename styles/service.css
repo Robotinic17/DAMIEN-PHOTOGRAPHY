@@ -543,9 +543,6 @@ footer {
   margin-top: -3rem;
 }
 
-.faq {
-  margin: 70px auto 16px auto;
-}
 @keyframes scrollleft {
   to {
     left: -250px;
@@ -647,6 +644,11 @@ footer {
   width: 100%;
 }
 
+.faq {
+  margin: 70px auto 16px auto;
+  width: 80%
+}
+
 @media (max-width: 1100px) {
   .pricing-card{
   align-items: start;
@@ -678,10 +680,16 @@ footer {
 .port-button-cointainer{
   bottom: -5%;
 }
+.faq{
+  width: 90%;
+}
 }
 
 @media (max-width: 500px) {
 .pricing-card{
+  width: 95%;
+}
+.faq{
   width: 95%;
 }
 .portrait{
