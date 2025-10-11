@@ -161,7 +161,6 @@ nav button:active {
   padding: 0;
   animation: fadeIn 0.5s 1s linear backwards;
   z-index: 0;
-  border-radius: 50px 0px 0px 0px;
 }
 
 @keyframes fadeIn {
@@ -999,31 +998,42 @@ section {
   .hero_section {
     height: 200px;
     margin-top: 120px;
+    background-image: url(../assets/hero.png);
+    overflow: visible;
+    margin-bottom: 13rem;
+    width: 95%;
+    background-size: cover;
   }
 
   .hero-text {
-    width: 88%;
-    gap: 0.2rem;
-    top: 34px;
+    gap: 0.7rem;
+    top: 120%;
+    position: relative;
+    width: 100%;
+    padding: 0;
   }
 
   .hero-text h6 {
-    font-size: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
   }
 
   .hero-text h2 {
-    font-size: 12px;
+    font-size: 30px;
   }
 
   .hero-text p {
-    font-size: 5px;
+    font-size: 13px;
   }
   .hero-img img {
     width: 27px;
     height: 27px;
+    display: none;
   }
 
   .hero-command {
+    display: none;
     bottom: 0px;
     width: 24%;
   }
