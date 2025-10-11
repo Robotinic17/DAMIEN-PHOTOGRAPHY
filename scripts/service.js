@@ -1,4 +1,3 @@
-
 const faqArray = [
   {
     id: "1",
@@ -58,16 +57,24 @@ function renderFAQs() {
     const accordionItem = document.createElement("div");
 
     accordionItem.innerHTML = `
-      <div class="accordion" style="display:flex; justify-content:space-between; align-items:center; padding: 20px; border:0.5px solid rgba(128, 128, 128, 0.38); border-radius:5px; margin-bottom:10px;">
+      <div  data-aos="fade-up" data-aos-duration="500"  class="accordion" style="display:flex; justify-content:space-between; align-items:center; padding: 20px; border:0.5px solid rgba(128, 128, 128, 0.38); border-radius:5px; margin-bottom:10px;">
         <div>
-          <p style="font-size:15px; color:rgba(233, 233, 233, 0.79); margin-bottom:10px;">${data.title}</p>
-          <p style="font-size:12px; color:rgba(128, 128, 128, 0.79); display:${isActive ? "block" : "none"};">${data.desc}</p>
+          <p class="js-prob" style="font-size:15px; color:rgba(233, 233, 233, 0.79); margin-bottom:10px;">${
+            data.title
+          }</p>
+          <p class="js-prob2" style="font-size:12px; color:rgba(128, 128, 128, 0.79); display:${
+            isActive ? "block" : "none"
+          };">${data.desc}</p>
         </div>
         <div>
-          <button data-id="${data.id}" style="background:none; border:0.5px solid rgba(128, 128, 128, 0.38); padding:15px 16px; border-radius: 25px; color:rgba(128, 128, 128, 0.85); cursor:pointer; font-weight:bolder; font-size: 16px; ">
-           ${activeId === data.id 
-    ? '<i class="fa-solid fa-chevron-down"></i>' 
-    : '<i class="fa-solid fa-chevron-up"></i>'}
+          <button data-id="${
+            data.id
+          }" style="background:none; border:0.5px solid rgba(128, 128, 128, 0.38); padding:15px 16px; border-radius: 25px; color:rgba(128, 128, 128, 0.85); cursor:pointer; font-weight:bolder; font-size: 16px; ">
+           ${
+             activeId === data.id
+               ? '<i class="fa-solid fa-chevron-down"></i>'
+               : '<i class="fa-solid fa-chevron-up"></i>'
+           }
           </button>
         </div>
       </div>
@@ -79,13 +86,33 @@ function renderFAQs() {
   document.querySelectorAll("#faq-container button").forEach((btn) => {
     btn.addEventListener("click", () => {
       const id = btn.getAttribute("data-id");
-      activeId = activeId === id ? null : id; 
+      activeId = activeId === id ? null : id;
       renderFAQs();
     });
   });
 }
 
 renderFAQs();
+
+const menuIcon = document.getElementById("menu");
+const closeMenu = document.getElementById("Xmenu");
+const sideNav = document.querySelector("nav ul");
+const overLay = document.querySelector(".backdrop-overlay");
+const contact = document.querySelector("nav button ");
+
+menuIcon.addEventListener("click", () => {
+  sideNav.style.right = "0";
+  overLay.style.display = "Block";
+  setTimeout(() => {
+    contact.style.display = "block";
+  }, 600);
+});
+
+closeMenu.addEventListener("click", () => {
+  sideNav.style.right = "-100%";
+  overLay.style.display = "none";
+  contact.style.display = "none";
+});
 
 AOS.init({
   mirror: true,
