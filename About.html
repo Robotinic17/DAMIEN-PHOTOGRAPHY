@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/About.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/About.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>DAMIEN PHOTOGRAPHY</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <p>Damien</p>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html"  class="active">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="service.html">Services</a></li>
-            </ul>
-            <button> <a href="#href"></a> Contact Me</button>
-        </nav>
+      <nav>
+        <p>Damien</p>
+        <ul>
+          <li class="Xmenu" id="Xmenu" style="display: none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="Xmenu-icon"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#ffffff"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html" class="active">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Services</a></li>
+        </ul>
+        <div class="menu" id="menu" style="display: none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu-icon"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#ffffff"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </div>
+        <button><a href="#href"></a> Contact Me</button>
+      </nav>
     </header>
-</body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="/scripts/service.js"></script>
+
+    <div class="backdrop-overlay"></div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./scripts/about.js"></script>
 </html>
