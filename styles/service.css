@@ -634,9 +634,7 @@ footer {
   margin: 70px auto 16px auto;
   width: 80%;
 }
-section {
-  overflow-x: hidden;
-}
+
 
 @media (max-width: 1100px) {
   .hero_section {
