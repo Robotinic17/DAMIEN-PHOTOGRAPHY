@@ -5,7 +5,7 @@ const sideNav = document.querySelector("nav ul");
 const overLay = document.querySelector(".backdrop-overlay");
 const contact = document.querySelector("nav button");
 
-// FAQ Data for Home Page - Using the exact same structure as service page
+// FAQ Data for Home Page
 const faqArray = [
   {
     id: "1",
@@ -121,13 +121,13 @@ if (menuIcon && closeMenu) {
 }
 
 // Close menu when clicking on navigation links
-document.querySelectorAll("nav ul li a").forEach((link) => {
-  link.addEventListener("click", () => {
-    sideNav.style.right = "-100%";
-    overLay.style.display = "none";
-    if (contact) contact.style.display = "none";
-  });
-});
+// document.querySelectorAll("nav ul li a").forEach((link) => {
+//   link.addEventListener("click", () => {
+//     sideNav.style.right = "-100%";
+//     overLay.style.display = "none";
+//     if (contact) contact.style.display = "none";
+//   });
+// });
 
 // Initialize everything when DOM loads
 document.addEventListener("DOMContentLoaded", function () {

@@ -17,6 +17,10 @@ closeMenu.addEventListener("click", () => {
   overLay.style.display = "none";
   contact.style.display = "none";
 });
-AOS.init({
-  mirror: true,
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    mirror: true,
+    duration: 200,
+    once: false,
+  });
 });
