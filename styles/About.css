@@ -847,6 +847,10 @@ html {
     font-size: 15px;
     padding: 13px 17px;
   }
+
+  .hero {
+    margin-top: 25vh;
+  }
 }
 
 @media (max-width: 780px) {
