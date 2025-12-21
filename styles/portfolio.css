@@ -828,6 +828,73 @@ html {
     font-size: 15px;
     padding: 13px 17px;
   }
+  .hero {
+    width: 80vw;
+    height: 420px;
+  }
+  .hero img {
+    z-index: -1;
+    height: 420px;
+    width: 80vw;
+    position: absolute;
+  }
+  .hero-text p {
+    font-size: 12px;
+  }
+  .hero-text h2 {
+    font-size: 27px;
+    text-transform: uppercase;
+  }
+  .hero-text {
+    padding: 0 1px 0 10px;
+  }
+
+  .hero-star img {
+    width: 75px;
+    height: 75px;
+    top: 10px;
+  }
+
+  .hero-command {
+    position: absolute;
+    bottom: 17px;
+    right: -11px;
+    width: 150px;
+    font-size: 17px;
+  }
+
+  .brand_item img {
+    width: 150px;
+    height: auto;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+  .about-text h3 {
+    font-size: 30px;
+  }
+  .explore-images {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .explore-buttons h5 {
+    font-size: 13px;
+  }
+
+  .explore-buttons p {
+    font-size: 12px;
+  }
+  .explore-buttons h5 {
+    font-size: 11px;
+  }
+
+  .explore-buttons p {
+    font-size: 10px;
+  }
+  .line {
+    border: 1px solid #1c1c21;
+    margin: 30px 0;
+  }
 }
 
 @media (max-width: 780px) {
@@ -845,6 +912,10 @@ html {
   nav button {
     font-size: 12px;
     padding: 9px 11px;
+  }
+
+  .infinite-scroll li {
+    font-size: 11px;
   }
 }
 

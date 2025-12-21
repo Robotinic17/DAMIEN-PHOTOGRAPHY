@@ -851,6 +851,54 @@ html {
   .hero {
     margin-top: 25vh;
   }
+
+  .hero-name2 {
+    font-size: 25px;
+  }
+
+  .hero-name {
+    font-size: 12px;
+  }
+
+  .array-obj {
+    padding: 0px 15px;
+  }
+  .ao1 {
+    font-size: 22px;
+  }
+  .ao2 {
+    font-size: 10px;
+  }
+  .hero-star img {
+    width: 75px;
+    height: 75px;
+    left: -5px;
+  }
+
+  .hero-command {
+    position: absolute;
+    bottom: 25px;
+    right: -5px;
+    width: 150px;
+    font-size: 17px;
+  }
+
+  .about-text h3 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 100%;
+    font-family: var(--Main-font);
+    text-transform: uppercase;
+    color: #e4e4e6;
+  }
+
+  .DAMIEN {
+    font-size: 7.5rem;
+  }
+
+  .infinite-scroll li {
+    font-size: 12.5px;
+  }
 }
 
 @media (max-width: 780px) {
