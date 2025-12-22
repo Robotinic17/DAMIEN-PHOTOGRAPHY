@@ -98,21 +98,20 @@ function renderFAQs() {
 }
 
 // Menu event listeners
-if (menuIcon) {
+if (menuIcon && closeMenu) {
   menuIcon.addEventListener("click", () => {
-    sideNav.style.right = "0";
-    overLay.style.display = "Block";
-    setTimeout(() => {
-      contact.style.display = "block";
-    }, 600);
+    sideNav.style.right = "30px";
+    overLay.style.display = "block";
   });
-}
 
-if (closeMenu) {
   closeMenu.addEventListener("click", () => {
     sideNav.style.right = "-100%";
     overLay.style.display = "none";
-    contact.style.display = "none";
+    if (contact) contact.style.display = "none";
+  });
+  overLay.addEventListener("click", () => {
+    sideNav.style.right = "-100%";
+    overLay.style.display = "none";
   });
 }
 
