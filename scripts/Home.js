@@ -1,4 +1,3 @@
-// Mobile Menu Functionality
 const menuIcon = document.getElementById("menu");
 const closeMenu = document.getElementById("Xmenu");
 const sideNav = document.querySelector("nav ul");
@@ -75,7 +74,7 @@ function renderFAQs() {
         <div>
           <button data-id="${
             data.id
-          }" style="background:none; border:0.5px solid rgba(128, 128, 128, 0.38); padding:15px 16px; border-radius: 25px; color:rgba(128, 128, 128, 0.85); cursor:pointer; font-weight:bolder; font-size: 16px; ">
+          }" style="background:none; border:0.5px solid rgba(128, 128, 128, 0.38); padding:15px 16px; border-radius: 25px; color:rgba(128, 128, 128, 0.85); cursor:pointer; font-weight:bolder; font-size: 16px;">
            ${
              activeId === data.id
                ? '<i class="fa-solid fa-chevron-down"></i>'
@@ -96,40 +95,27 @@ function renderFAQs() {
       renderFAQs();
     });
   });
-
-  // Refresh AOS to recognize newly added elements
-  if (typeof AOS !== "undefined") {
-    AOS.refresh();
-  }
 }
 
-// Mobile Menu Event Listeners
-if (menuIcon && closeMenu) {
+// Menu event listeners
+if (menuIcon) {
   menuIcon.addEventListener("click", () => {
     sideNav.style.right = "0";
-    overLay.style.display = "block";
+    overLay.style.display = "Block";
     setTimeout(() => {
-      if (contact) contact.style.display = "block";
+      contact.style.display = "block";
     }, 600);
   });
+}
 
+if (closeMenu) {
   closeMenu.addEventListener("click", () => {
     sideNav.style.right = "-100%";
     overLay.style.display = "none";
-    if (contact) contact.style.display = "none";
+    contact.style.display = "none";
   });
 }
 
-// Close menu when clicking on navigation links
-// document.querySelectorAll("nav ul li a").forEach((link) => {
-//   link.addEventListener("click", () => {
-//     sideNav.style.right = "-100%";
-//     overLay.style.display = "none";
-//     if (contact) contact.style.display = "none";
-//   });
-// });
-
-// Initialize everything when DOM loads
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize AOS
   if (typeof AOS !== "undefined") {
