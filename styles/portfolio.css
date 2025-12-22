@@ -917,6 +917,62 @@ html {
   .infinite-scroll li {
     font-size: 11px;
   }
+
+  .hero {
+    height: 320px;
+  }
+  .hero img {
+    z-index: -1;
+    height: 320px;
+  }
+
+  .hero-text h6 {
+    font-size: 15px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .hero-text p {
+    font-size: 9px;
+  }
+
+  .hero-star img {
+    width: 55px;
+    height: 55px;
+    left: 6px;
+    top: 30px;
+  }
+
+  .hero-command {
+    position: absolute;
+    bottom: 15px;
+    right: -10px;
+    width: 120px;
+    font-size: 13px;
+  }
+
+  .brand_item img {
+    width: 110px;
+  }
+
+  .til {
+    font-size: 11px;
+  }
+
+  .footer-links h3 {
+    font-size: 14px;
+  }
+
+  .footer-links ul li a {
+    font-size: 13px;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 500px) {

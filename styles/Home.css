@@ -1123,7 +1123,7 @@ html {
   }
   nav button {
     font-size: 12px;
-    padding: 9px 11px;
+    padding: 11px 11px;
   }
 
   .hero-buttons {
@@ -1133,7 +1133,17 @@ html {
     align-items: flex-end;
     width: 100%;
   }
-
+  .infinite-scroll li {
+    font-size: 11px;
+  }
+  .about-image img {
+    width: 28rem;
+    height: 25rem;
+  }
+  .about-stars img {
+    width: 20px;
+    height: 20px;
+  }
   .about-image {
     display: flex;
     gap: 20px;
@@ -1146,8 +1156,20 @@ html {
     gap: 20px;
     flex-direction: column;
   }
-  .about-image img {
-    width: 28rem;
-    height: 25rem;
+  .services-info img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-links h3 {
+    font-size: 14px;
+  }
+
+  .footer-links ul li a {
+    font-size: 13px;
+  }
+
+  .copyright {
+    font-size: 11px;
   }
 }
