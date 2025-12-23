@@ -159,7 +159,7 @@ nav button:active {
   z-index: 0;
 }
 
-.hero img {
+.AImg1 {
   z-index: -1;
   height: 520px;
   width: 80vw;
@@ -798,6 +798,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.AImg2 {
+  display: none;
+}
+
 @media (max-width: 1300px) {
   .hero-name {
     font-size: 15px;
@@ -918,7 +922,7 @@ html {
     padding: 9px 11px;
   }
 
-  .hero img {
+  .AImg1 {
     z-index: -1;
     height: 320px;
     width: 80vw;
@@ -1092,5 +1096,121 @@ html {
     top: 85vh;
     right: 33%;
     display: none;
+  }
+  .AImg1 {
+    display: none;
+  }
+
+  .AImg2 {
+    z-index: -1;
+    height: 270px;
+    width: 100vw;
+    position: absolute;
+    display: block;
+  }
+
+  .hero {
+    height: 325px;
+    margin-top: 25vh;
+    width: 95vw;
+    overflow: visible;
+  }
+  .AImg2 {
+    z-index: -1;
+    height: 270px;
+    width: 95vw;
+    position: absolute;
+    display: block;
+  }
+
+  .hero-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    justify-self: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 15%;
+    margin-top: 300px;
+    width: 95%;
+  }
+  .hero-star {
+    display: none;
+  }
+  .hero-command {
+    display: none;
+  }
+  .hero-name {
+    font-size: 20px;
+  }
+  .hero-name2 {
+    font-size: 27px;
+  }
+  .array {
+    display: flex;
+    gap: 20px 40px;
+    width: 95%;
+    height: 24%;
+    position: absolute;
+    margin-top: 400px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+  }
+  .array-obj {
+    background: #0e0e10;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    height: 85px;
+    padding: 0px 25px;
+    width: 43%;
+    justify-content: center;
+    box-shadow: #ffffff 0px 0px 1px;
+  }
+  .ao1 {
+    font-size: 25px;
+  }
+  .ao2 {
+    font-size: 12px;
+  }
+  .bio {
+    margin-top: 27rem;
+    width: 95vw;
+  }
+
+  .jh2 {
+    font-size: 32px;
+  }
+  .journey {
+    width: 95vw;
+  }
+  .DAMIEN {
+    font-size: 4rem;
+  }
+
+  .infinite-scroll li {
+    font-size: 7.5px;
+  }
+
+  .infinite-scroll ul {
+    height: 25px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .copyright {
+    font-size: 9px;
   }
 }
