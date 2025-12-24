@@ -1116,20 +1116,6 @@ html {
     overflow: visible;
   }
 
-  .about-buttons button {
-    background: #1c1c21;
-    color: #fff;
-    border: none;
-    padding: 13px 17px;
-    font-size: 10px;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(29, 29, 29, 0.4);
-    font-family: var(--Main-font);
-    white-space: nowrap;
-  }
   .AImg2 {
     z-index: -1;
     height: 270px;
