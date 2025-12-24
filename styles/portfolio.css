@@ -1063,15 +1063,15 @@ html {
   .hero {
     width: 95vw;
     justify-self: center;
-    height: 320px;
+    height: 270px;
     overflow: visible;
-    margin-top: 1rem;
+    margin-top: 7rem;
   }
 
   .hero img {
     width: 95vw;
     position: absolute;
-    height: 320px;
+    height: 270px;
   }
 
   .hero-command {
@@ -1084,11 +1084,11 @@ html {
   .hero-text {
     padding: 0 1px 0 10px;
     width: 100%;
-    margin-top: 380px;
+    margin-top: 320px;
   }
 
   .Brands {
-    margin-top: 8rem;
+    margin-top: 15rem;
     width: 95vw;
   }
   .brand_item img {
